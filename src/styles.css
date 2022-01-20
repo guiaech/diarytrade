@@ -39,6 +39,7 @@ input.form-control{
 span#inputGroup-sizing-default.input-group-text{
     background-color: #2125295e ;
     color: #fff;
+    border-bottom-left-radius: 0%;
 }
 
 button.accordion-button{
