@@ -47,6 +47,7 @@ const UserLogin = () => {
   }
 
   return (
+    <section className="login-section">
     <div className="user-login">
       <h1 className="user-login__title">Diary Day Trade AFT</h1>
       <form onSubmit={onSubmit}>
@@ -83,6 +84,7 @@ const UserLogin = () => {
         </UIButton>
       </form>
     </div>
+    </section>
   );
 };
 
