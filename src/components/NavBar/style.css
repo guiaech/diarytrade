@@ -1,9 +1,13 @@
 .button-logout{
-    background-color: #1b1a1a59;;
+    background-color: #0e0d0d00;;
     border: none;
     color: #fff;
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
-    background-color: #1b1a1a59 !important;
+    background-color: #0e0d0d00 !important;
+}
+
+.container , .navbar-brand , .navbar-collapse , .navbar-toggler-icon {
+        background-color: #0e0d0d00 !important;
 }

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-diarytrade-dev-42632-authRole",
+      "UnauthRoleArn": "arn:aws:iam::695909514658:role/amplify-diarytrade-dev-42632-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::695909514658:role/amplify-diarytrade-dev-42632-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-diarytrade-dev-42632-deployment",
+      "UnauthRoleName": "amplify-diarytrade-dev-42632-unauthRole",
+      "StackName": "amplify-diarytrade-dev-42632",
+      "StackId": "arn:aws:cloudformation:us-east-1:695909514658:stack/amplify-diarytrade-dev-42632/4cb47440-7e79-11ec-8c3e-0ac444f76f3b",
+      "AmplifyAppId": "d3tyq9nakk7wrg"
+    },
+    "categories": {
+      "auth": {
+        "diarytrade08ded47c": {}
+      }
+    }
+  }
+}

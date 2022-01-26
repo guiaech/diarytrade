@@ -1,5 +1,5 @@
 .user-login {
-  background-color: #585b66b0;
+    background-color: #142150;
     max-width: 400px;
     border-radius: 20px;
     padding: 30px;
@@ -10,26 +10,31 @@
   max-width:100%;
   display: flex;
   align-items: center;
-  margin-top:5%;
   padding: 5%;
+  background-color: rgb(191, 103, 250);
+  height: 100vh;
 }
   .user-login__title {
     font-size: 40px;
     color: #f8f8f8;
     margin-bottom: 50px;
     text-align: center;
+    background-color: #142150c5
+  
   }
   
   .user-login__form-control {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    
   }
   
-  .user-login__form-control label {
+  .user-login__form-control {
     margin-bottom: 5px;
     color: #f8f5f5;
     font-size: 16px;
+    
   }
   
   .user-login__form-control input {
@@ -44,3 +49,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+
+

@@ -1,5 +1,4 @@
 html, body{
-    background-image: url(./assets/background/backLogin.svg);
     width: 100vw;
     height:100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,50 +8,51 @@ html, body{
 * {
     margin: 0;
     padding: 0;
+    background-color: #142150b0;
     
 }
 
 .root{
-    background-color: #0e0d0df1;
+    background-color: #0e0d0d00;
 }
 
 .accordion-body , .accordion-item, .accordion-header, 
 .accordion-button, .accordion-collapse.collapse, .accordion-item:first-of-type{
-    background-color: #05050555 !important;
+    background-color: #0e0d0d00 !important;
     color: #fff;
 }
 
 textarea{
-    background-color: #21252900 ;
+    background-color: #0e0d0d00 ;
     color: #fff;
 }
 
 div.card{
-    background-color: #21252900 ;
+    background-color: #0e0d0d00 ;
 }
 
 input.form-control{
-    background-color: #2125295e ;
+    background-color: #0e0d0d00 ;
     color: #fff;
 }
 
 span#inputGroup-sizing-default.input-group-text{
-    background-color: #2125295e ;
+    background-color: #0e0d0d00 ;
     color: #fff;
     border-bottom-left-radius: 0%;
 }
 
 button.accordion-button{
-        background-color: #2125295e !important;
+        background-color: #0e0d0d00 !important;
         color: #fff !important;
 }
 
 button.accordion-button.collapsed{        
-    background-color: #2125295e !important;
+    background-color: #0e0d0d00 !important;
     color: #fff ;
 }
 
 h2.accordion-header{        
-    background-color: #c0bbbb5e !important;
+    background-color: #0e0d0d00 !important;
     color: #fff ;
 }
