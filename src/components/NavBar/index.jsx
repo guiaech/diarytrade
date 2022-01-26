@@ -1,26 +1,31 @@
-import React, { useContext}  from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import StoreContext from '../Store/Context';
 import './style.css'
+import { Amplify } from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import awsExports from '../../aws-exports';
+Amplify.configure(awsExports);
 
 
-const Header = () => {
-    const { setToken } = useContext(StoreContext);
-    return (
+function Header({ signOut, user }) {
+  return (
+    <>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+            <Navbar.Brand href="#home">Trade diary AFT</Navbar.Brand>
+            <Navbar.Toggle />
+            <Navbar.Collapse className="justify-content-end"> 
+            <span>Bem vindo {user.username}</span>
+            <button onClick={signOut}>Sair</button>         
+            </Navbar.Collapse>
+        </Container>
+    </Navbar>
 
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand href="#home">Trade diary AFT</Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse className="justify-content-end">
-                        <button className="button-logout" type="button" onClick={() => setToken(null)}>
-                          Sair
-                        </button>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    )
+
+    </>
+  );
 }
 
-export default Header
+export default withAuthenticator(Header);

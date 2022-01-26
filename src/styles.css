@@ -3,13 +3,12 @@ html, body{
     height:100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
-    
 }
+
 * {
     margin: 0;
     padding: 0;
-    background-color: #142150b0;
-    
+    background-color: #142150ef;
 }
 
 .root{
