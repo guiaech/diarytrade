@@ -1,41 +1,41 @@
-.area{
+.area {
     padding: 50px;
 }
 
-textarea{
-    width:100%;
-    border-bottom-left-radius: 4px !important; 
-    border-bottom-right-radius: 4px !important; 
+textarea {
+    width: 100%;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
     resize: auto !important;
     min-height: 160px;
-    background-color: #ffffff8a !important; 
+    background-color: #ffffff8a !important;
     margin: 0px !important;
 }
 
 
-#inputGroup-sizing-default.areatextneg.input-group-text{
-    width:100%;
+#inputGroup-sizing-default.areatextneg.input-group-text {
+    width: 100%;
     background-color: red;
     color: #fff;
-    border-top-left-radius: 4px !important; 
-    border-top-right-radius: 4px !important; 
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
 }
 
-#inputGroup-sizing-default.areatextpos.input-group-text{
-    width:100%;
+#inputGroup-sizing-default.areatextpos.input-group-text {
+    width: 100%;
     background-color: green;
     color: #fff;
-    border-top-left-radius: 4px !important; 
-    border-top-right-radius: 4px !important; 
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
 }
 
 
-span#inputGroup-sizing-default.input-group-text{
+span#inputGroup-sizing-default.input-group-text {
     min-width: 100px;
 }
 
-.buttonForm{
-    background-color: #b38808 ;
+.buttonForm {
+    background-color: #b38808;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -44,12 +44,12 @@ span#inputGroup-sizing-default.input-group-text{
     margin: auto;
 }
 
-.divSubmit{
+.divSubmit {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.card{
+.card {
     padding: 10px;
 }

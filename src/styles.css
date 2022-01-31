@@ -8,11 +8,11 @@ html, body{
 * {
     margin: 0;
     padding: 0;
-    background-color: #142150ef;
+    background-color: rgb(88, 48, 100)
 }
 
 .root{
-    background-color: #0e0d0d00;
+    background-color: #7c3d3d00;
 }
 
 .accordion-body , .accordion-item, .accordion-header, 
@@ -55,3 +55,5 @@ h2.accordion-header{
     background-color: #0e0d0d00 !important;
     color: #fff ;
 }
+
+

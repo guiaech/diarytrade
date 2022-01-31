@@ -1,19 +1,22 @@
-.row{
+.row {
     margin-top: 3%
-  }
+}
 
 .page-footer.font-small.blue.pt-4 {
     background-color: #1b1a1a59;
 }
 
 
- 
-.item-lista, .email, .fone, li {
+
+.item-lista,
+.email,
+.fone,
+li {
     text-decoration: none;
     color: #fff;
     margin-top: 18px
 }
-  
-.footer-copyright.text-center.py-3{
+
+.footer-copyright.text-center.py-3 {
     color: #fff;
 }

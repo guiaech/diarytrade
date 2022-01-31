@@ -1,14 +1,19 @@
-span , button{
-    background-color: #0e0d0d00;;
+.welcome,
+.signOut {
+    background-color: #0e0d0d00;
+    ;
     border: none;
     color: #fff;
-    padding-left: 3% ;
+    padding-left: 3%;
 }
 
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     background-color: #0e0d0d00 !important;
 }
 
-.container , .navbar-brand , .navbar-collapse , .navbar-toggler-icon {
-        background-color: #0e0d0d00 !important;
+.container,
+.navbar-brand,
+.navbar-collapse,
+.navbar-toggler-icon {
+    background-color: #0e0d0d00 !important;
 }

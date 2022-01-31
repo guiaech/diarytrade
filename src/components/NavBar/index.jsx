@@ -12,16 +12,16 @@ Amplify.configure(awsExports);
 function Header({ signOut, user }) {
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-            <Navbar.Brand href="#home">Trade diary AFT</Navbar.Brand>
-            <Navbar.Toggle />
-            <Navbar.Collapse className="justify-content-end"> 
-            <span>Bem vindo {user.username}</span>
-            <button onClick={signOut}>Sair</button>         
-            </Navbar.Collapse>
+          <Navbar.Brand href='/home'>Trade diary AFT</Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="justify-content-end">
+            <span className='welcome'>Bem vindo {user.username}</span>
+            <button className='signOut' onClick={signOut}>Sair</button>
+          </Navbar.Collapse>
         </Container>
-    </Navbar>
+      </Navbar>
 
 
     </>
