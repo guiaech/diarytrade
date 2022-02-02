@@ -1,3 +1,4 @@
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import React, { useState } from 'react'
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
@@ -8,6 +9,7 @@ import Amplify, { API, graphqlOperation } from 'aws-amplify'
 import { createTodo } from '../../../../graphql/mutations'
 import awsExports from "../../../../aws-exports";
 Amplify.configure(awsExports);
+
 
 const initialState = {
     username: '',
@@ -21,7 +23,10 @@ const initialState = {
     resultado: '',
 }
 
-const Dash = () => {
+function Dash({user}){
+    const username = user.username
+    
+
     const [formState, setFormState] = useState(initialState)
     const [todos, setTodos] = useState([])
 
@@ -31,9 +36,11 @@ const Dash = () => {
 
     async function addTodo() {
         try {
+            formState.username = username
             if (!formState.username) return
             const todo = { ...formState }
             setTodos([...todos, todo])
+
             setFormState(initialState)
             await API.graphql(graphqlOperation(createTodo, { input: todo }))
         } catch (err) {
@@ -45,11 +52,6 @@ const Dash = () => {
         <>
             <CardGroup>
                 <Card>
-                    <input
-                        onChange={event => setInput('username', event.target.value)}
-                        value={formState.username}
-                        placeholder="User Name"
-                    />
                     <InputGroup className="mb-3">
                         <InputGroup.Text id="inputGroup-sizing-default">Data</InputGroup.Text>
                         <FormControl
@@ -128,4 +130,5 @@ const Dash = () => {
     )
 }
 
-export default Dash
+
+export default withAuthenticator(Dash);
