@@ -8,6 +8,7 @@ import Amplify, { Auth } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import awsconfig from '../../aws-exports';
 import awsExports from "../../aws-exports";
+import Dash from './components/Dash';
 
 Amplify.configure(awsExports);
 
@@ -18,6 +19,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <Dash />
       <Drop />
       <Footer />
     </>

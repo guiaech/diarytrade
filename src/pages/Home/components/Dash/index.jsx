@@ -42,12 +42,24 @@ function Dash({ user }) {
             await API.graphql(graphqlOperation(createTodo, { input: todo }))
         } catch (err) {
             console.log('error creating todo:', err)
-        }
+        } let content = document.getElementById('area')
+
+        let carregando = `<p>sending...</p>`
+
+        let pronto = `<p class="cadastrado">FORM SENT SUCCESSFULLY! </p>`
+
+        content.innerHTML = carregando
+
+
+        setTimeout(() => {
+            content.innerHTML = pronto
+        }, 1000)
     }
 
     return (
         <>
-            <CardGroup>
+        <h1>|Diary</h1>
+            <CardGroup id='area'>
                 <Card>
                     <InputGroup className="mb-3">
                         <InputGroup.Text id="inputGroup-sizing-default">Data</InputGroup.Text>
@@ -117,12 +129,13 @@ function Dash({ user }) {
                         <textarea id='poperacao' name='poperacao' value={formState.poperacao} onChange={event => setInput('poperacao', event.target.value)} label="Pontos negativos"></textarea>
                     </InputGroup>
                 </Card>
+                <div className="divSubmit">
+                    <button value="enviar" className="buttonForm" onClick={addTodo}>
+                        SEND
+                    </button>
+                </div>
             </CardGroup>
-            <div className="divSubmit">
-                <button value="enviar" className="buttonForm" onClick={addTodo}>
-                    SEND
-                </button>
-            </div>
+
         </>
     )
 }

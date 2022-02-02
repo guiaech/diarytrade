@@ -1,8 +1,28 @@
 .containerGrafico{
+    margin: auto;
+    margin-top:2%;
+    margin-bottom:5%;
     background-color: #fff;
-    width: 100%;
+    max-width: 95%;
     height: 100%;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 10px;
     box-shadow:  10px 10px 10px rgba(10, 10, 10, 0.794)
+}
+
+.containerGrafico:hover{
+    transform: translateY(-5px);
+}
+
+.textPerfomance{
+    margin-top:4%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+h1{
+    width: 100%;
+    color: #fff;
+    text-align: center;
 }

@@ -48,9 +48,33 @@ span#inputGroup-sizing-default.input-group-text {
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: rgba(14, 13, 13, 0.027);
+    
+}
+.divSubmit:hover{
+    transform: translateY(-5px);
 }
 
 .card {
     padding: 10px;
 }
 
+.card-group{
+    background-color: rgba(14, 13, 13, 0.555);
+    padding: 3%;
+    box-shadow:  10px 10px 10px rgba(10, 10, 10, 0.794);
+    margin: auto;
+    width: 95%;
+    border-radius: 10px;
+
+}
+
+p{
+    width: 100%;
+    color: #fff;
+    background-color: rgba(14, 13, 13, 0.027);
+    font-size: xx-large;
+    text-align: center;
+    height: 200px;
+    padding-top: 7%;
+}
