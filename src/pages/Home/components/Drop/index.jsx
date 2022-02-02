@@ -1,7 +1,17 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-import Dash from '../Dash'
+import Dash from '../Dash';
+import { Chart } from "react-google-charts";
+import './style.css'
 
+export const data = [
+  ["Dia", "Meta", "Resultado"],
+  ["Seg", 1000, 400],
+  ["Ter", 1170, 460],
+  ["Qua", 660, 1120],
+  ["Qui", 1030, 540],
+  ["Sex", 1030, 540],
+];
 
 
 const Drop = () => {
@@ -14,27 +24,18 @@ const Drop = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Dia 13/01/2021</Accordion.Header>
+        <Accordion.Header>Perfomance</Accordion.Header>
         <Accordion.Body>
-          Dados do dia
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Dia 14/01/2021</Accordion.Header>
-        <Accordion.Body>
-          Dados do dia.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>Dia 15/01/2021</Accordion.Header>
-        <Accordion.Body>
-          Dados do dia.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Dia 16/01/2021</Accordion.Header>
-        <Accordion.Body>
-          Dados do dia.
+
+          <div className='containerGrafico'>
+          <Chart
+            chartType="Bar"
+            width="90%"
+            height="500px"
+            data={data}
+          />
+          </div>
+
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

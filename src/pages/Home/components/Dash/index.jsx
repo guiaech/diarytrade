@@ -23,10 +23,8 @@ const initialState = {
     resultado: '',
 }
 
-function Dash({user}){
+function Dash({ user }) {
     const username = user.username
-    
-
     const [formState, setFormState] = useState(initialState)
     const [todos, setTodos] = useState([])
 
@@ -40,7 +38,6 @@ function Dash({user}){
             if (!formState.username) return
             const todo = { ...formState }
             setTodos([...todos, todo])
-
             setFormState(initialState)
             await API.graphql(graphqlOperation(createTodo, { input: todo }))
         } catch (err) {
