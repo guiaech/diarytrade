@@ -69,12 +69,25 @@ span#inputGroup-sizing-default.input-group-text {
 
 }
 
-p{
+h1{
     width: 100%;
     color: #fff;
     background-color: rgba(14, 13, 13, 0.027);
     font-size: xx-large;
     text-align: center;
-    height: 200px;
-    padding-top: 7%;
+    height: 70px;
+}
+
+tr{
+    border: 2px solid !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+td{
+    color: #fff;
+}
+
+.lista{
+    margin: 3%;
 }

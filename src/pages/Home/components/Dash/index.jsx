@@ -5,8 +5,8 @@ import FormControl from 'react-bootstrap/FormControl';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import './styles.css';
-import Amplify, { API, graphqlOperation } from 'aws-amplify'
-import { createTodo } from '../../../../graphql/mutations'
+import Amplify, { API, graphqlOperation } from 'aws-amplify';
+import { createTodo } from '../../../../graphql/mutations';
 import awsExports from "../../../../aws-exports";
 Amplify.configure(awsExports);
 
@@ -24,7 +24,7 @@ const initialState = {
 }
 
 function Dash({ user }) {
-    const username = user.username
+    let username = user.username
     const [formState, setFormState] = useState(initialState)
     const [todos, setTodos] = useState([])
 
@@ -42,23 +42,13 @@ function Dash({ user }) {
             await API.graphql(graphqlOperation(createTodo, { input: todo }))
         } catch (err) {
             console.log('error creating todo:', err)
-        } let content = document.getElementById('area')
-
-        let carregando = `<p>sending...</p>`
-
-        let pronto = `<p class="cadastrado">FORM SENT SUCCESSFULLY! </p>`
-
-        content.innerHTML = carregando
-
-
-        setTimeout(() => {
-            content.innerHTML = pronto
-        }, 1000)
+        }
     }
 
     return (
+
         <>
-        <h1>|Diary</h1>
+            <h1>|Diary</h1>
             <CardGroup id='area'>
                 <Card>
                     <InputGroup className="mb-3">
@@ -135,7 +125,6 @@ function Dash({ user }) {
                     </button>
                 </div>
             </CardGroup>
-
         </>
     )
 }

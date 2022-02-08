@@ -12,7 +12,7 @@ export const data = [
 ];
 
 
-const Drop = () => {
+const Graphic = () => {
   return (
     <>
       <div className="textPerfomance">
@@ -30,4 +30,4 @@ const Drop = () => {
   );
 }
 
-export default Drop;
+export default Graphic;

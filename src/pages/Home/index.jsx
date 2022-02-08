@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/NavBar';
-import Drop from './components/Drop';
+import List from './components/List';
+import Graphic from './components/Graphic';
 import Footer from '../../components/Footer';
 import './style.css'
 import '@aws-amplify/ui-react/styles.css'
@@ -14,13 +15,13 @@ Amplify.configure(awsExports);
 
 Auth.configure(awsconfig);
 
-
 const Home = () => {
   return (
     <>
       <Header />
       <Dash />
-      <Drop />
+      <Graphic />
+      <List />     
       <Footer />
     </>
   );
