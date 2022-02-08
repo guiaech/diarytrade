@@ -1,21 +1,27 @@
 import React, { useEffect, useState } from 'react'
-import Amplify, { API, graphqlOperation } from 'aws-amplify'
+import Amplify, { API } from 'aws-amplify'
 import { listTodos } from '../../../../graphql/queries'
 import awsExports from "../../../../aws-exports";
 import { withAuthenticator } from '@aws-amplify/ui-react';
 
 Amplify.configure(awsExports);
 
-function List() {
+function List({user}) {
     const [todos, setTodos] = useState([])
 
     useEffect(() => {
         fetchTodos()
-    }, [])
+    }, )
+
+    let filter = {
+        username: {
+            eq: user.username 
+        }
+    };
 
     async function fetchTodos() {
         try {
-            const todoData = await API.graphql(graphqlOperation(listTodos))
+            const todoData = await API.graphql({ query: listTodos, variables: { filter: filter}})
             const todos = todoData.data.listTodos.items
             setTodos(todos)
         } catch (err) { console.log('error fetching todos') }
@@ -34,7 +40,6 @@ function List() {
                         <td>observação: {todo.pobservacao}</td>
                         <td>operação: {todo.poperacao}</td>
                         <td>resultado: {todo.resultado}</td>
-                        <td >username: {todo.username}</td>
                         <td>capital: {todo.capital}</td>
                     </tr>
                 ))
