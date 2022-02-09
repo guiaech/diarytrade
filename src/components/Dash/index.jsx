@@ -6,10 +6,9 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import './styles.css';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
-import { createTodo } from '../../../../graphql/mutations';
-import awsExports from "../../../../aws-exports";
+import { createTodo } from '../../graphql/mutations';
+import awsExports from "../../aws-exports";
 Amplify.configure(awsExports);
-
 
 const initialState = {
     username: '',

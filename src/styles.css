@@ -56,4 +56,23 @@ h2.accordion-header{
     color: #fff ;
 }
 
+[data-amplify-authenticator][data-variation=modal]{
+    background-color: rgb(221, 191, 57);
+    min-height: 100%;
+
+} 
+
+
+
+@media (max-width: 30rem){
+
+    [data-amplify-authenticator][data-variation=modal]{
+        padding-top: 35%;
+
+    } 
+
+
+}
+
+
 

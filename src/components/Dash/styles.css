@@ -78,16 +78,3 @@ h1{
     height: 70px;
 }
 
-tr{
-    border: 2px solid !important;
-    display: flex !important;
-    justify-content: space-between !important;
-}
-
-td{
-    color: #fff;
-}
-
-.lista{
-    margin: 3%;
-}

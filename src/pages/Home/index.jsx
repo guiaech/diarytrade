@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from '../../components/NavBar';
-import List from './components/List';
-import Graphic from './components/Graphic';
+import { FeaturesText2x2 } from '../../ui-components';
+import List from '../../components/List';
+import Graphic from '../../components/Graphic';
 import Footer from '../../components/Footer';
-import './style.css'
 import '@aws-amplify/ui-react/styles.css'
 import Amplify, { Auth } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import awsconfig from '../../aws-exports';
 import awsExports from "../../aws-exports";
-import Dash from './components/Dash';
+import Dash from '../../components/Dash';
 
 Amplify.configure(awsExports);
 
@@ -19,6 +19,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <FeaturesText2x2 />
       <Dash />
       <Graphic />
       <List />     
