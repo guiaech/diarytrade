@@ -4,8 +4,9 @@
 
 .page-footer.font-small.blue.pt-4 {
     background-color: #1b1a1a59;
+    z-index: 999;
+    position: relative;
 }
-
 
 
 .item-lista,

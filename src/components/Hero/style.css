@@ -1,0 +1,50 @@
+.heroHome{
+    max-width: 100%;
+    height: 88vh;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(224, 122, 38)
+}
+
+
+.textHero{
+    color: #fff;
+    padding-top: 5%;
+    background-color: rgba(14, 13, 13, 0);
+}
+
+
+.titleHero{
+    color: #fff;
+    padding-top: 15%;
+    background-color: rgba(14, 13, 13, 0);
+}
+
+button.btn.btn-outline-secondary{
+    width: 7%;
+    margin-top: 2%;
+}
+
+.loginHero{
+    background-color: rgba(14, 13, 13, 0);
+    text-decoration: none;
+    color: #fff;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+@media (max-width: 990px){
+
+    .titleHero{
+        padding-top: 40%;
+    }
+
+    .textHero{
+       padding-top: 20%;
+    }
+
+    button.btn.btn-outline-secondary{
+        width: 35%;
+    }
+
+}

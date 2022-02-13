@@ -76,3 +76,8 @@ h2.accordion-header{
 
 
 
+.linkContato{
+    background-color: #0e0d0d00;
+    color: rgb(180, 172, 172) !important;
+    text-decoration: none
+}
