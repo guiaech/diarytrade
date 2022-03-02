@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../../components/NavBar';
 import List from '../../components/List';
-import Graphic from '../../components/Graphic';
 import Footer from '../../components/Footer';
 import '@aws-amplify/ui-react/styles.css'
 import Amplify, { Auth } from 'aws-amplify';
@@ -19,7 +18,6 @@ const PageUser = () => {
     <>
       <Header />
       <Dash />
-      <Graphic />
       <List />     
       <Footer />
     </>
